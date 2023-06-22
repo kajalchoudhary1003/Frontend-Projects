@@ -3,5 +3,6 @@ class HelloWorld {
         System.out.println("Hello, World!"); 
         System.out.println("White");
         System.out.println("Green");
+        System.out.println("Black");
     }
 }
