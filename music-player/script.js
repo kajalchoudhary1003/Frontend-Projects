@@ -68,5 +68,19 @@ img.src=songs.song + ".jpg";
 
 // loadSong(songs[0]);
 
+songIndex =0;
+
+const nextSong = () => {
+    songIndex = (songIndex+1) % songs.length;
+    loadSong(songs[songIndex]);
+    playMusic();
+}
+
+const prevSong = () => {
+    songIndex = (songIndex-1 + songs.length)%songs.length;
+    loadSong(songs[songIndex]);
+    playMusic();
+}
+
 next.addEventListener('click', nextSong);
 prev.addEventListener('click', prevSong);
