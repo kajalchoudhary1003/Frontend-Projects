@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap');
+:root{
+--dark-blue: #3AA6B9;
+--pink: #FFD0D0;
+--dark-pink: #FF9EAA;
+--blue: #C1ECE4;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    font-family: 'Crimson Text', serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.agecal{
+    width: 520px;
+    height: auto;
+    background-color: var(--pink);
+    border-radius: 25px;
+    border: 5px solid var(--dark-pink);
+    box-shadow: 1rem 1.5rem 1.5rem var(--dark-blue);
+}
+.base{
+    width: 100%;
+    border-radius: 20px;
+    margin: 0;
+    overflow: hidden;
+    display: block;
+    float: none;
+}
+.block{
+    width: 135px;
+    padding: 5px 20px;
+    margin-left: 20px;
+    display: inline-block;
+}
+.title{
+    font-size: 1.25rem;
+    font-weight: 600;
+    text-align: center;
+    word-spacing: 2.7px;
+    line-height: 0.5;
+    margin-top: 8px;
+}
+input[type="number"]{
+    width: 100px;
+    margin: auto;
+    outline: none;
+    min-height: 40px;
+    border: 3px solid var(--dark-blue);
+    padding: 10px;
+    background-color: var(--blue);
+    border-radius: 20px;
+    font-size: 1.20rem;
+    font-weight: 600;
+    letter-spacing: 2.5px;
+}
+input[type="number"]:focus{
+    background-color: var(--dark-pink);
+    outline: none;
+}
+
+input[type="button"]{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    font-size: 1.6rem;
+    font-weight: 600;
+    outline: none;
+    border: 4px solid var(--dark-pink);
+    border-radius: 8px;
+    background-color: var(--blue);
+    margin-left: 40%;
+    text-align: center;
+}
+input[type="button"]:hover{
+    background-color: var(--dark-pink);
+    border: 4px solid var(--dark-blue);
+    transform: scale(0.8);
+}
+#age{
+    display: block;
+    padding: 20px;
+    font-size: 1.25rem;
+    text-align: center;
+    line-height: 1.5;
+    color: rgb(57, 57, 57);
+}
