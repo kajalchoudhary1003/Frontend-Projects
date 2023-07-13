@@ -8,9 +8,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body class="w-full h-screen flex justify-center items-center">
-    <div class="container flex flex-row justify-evenly">
+    <div class="container flex md:flex-row justify-evenly min-[320px]:flex-col">
         <div class="divison flex flex-row">
-            <div class="small-imgs flex flex-col justify-evenly">
+            <div class="small-imgs flex flex-col justify-evenly min-[320px]:ml-3">
                 <img src="/productpage/images/1.jpg" class="w-20 h-18 border-2 rounded-md border-slate-300 -my-10 cursor-pointer" alt="">
                 <img src="/productpage/images/2.jpg" class="w-20 h-18 border-2 rounded-md border-slate-300 -my-10 cursor-pointer" alt="">
                 <img src="/productpage/images/3.jpg" class="w-20 h-18 border-2 rounded-md border-slate-300 -my-10 cursor-pointer" alt="">
@@ -22,7 +22,7 @@
                 <img src="/productpage/images/1.jpg" alt="">
             </div>
         </div>
-            <div class="details mt-16 ">
+            <div class="details md:mt-16 min-[320px]:m-5">
                 <h2 class="text-4xl mb-5">Apple iPhone 12 (128GB)-Product <br>Red</h2>
                 <div class="rat flex flex-row justify-start mb-3">
                     <div class="ratings">
@@ -48,7 +48,7 @@
                     </p>
                 </div>
                 <hr class="bg-slate-700">
-                <div class="offers flex flex-row justify-start mt-5">
+                <div class="offers flex flex-row md:justify-start min-[320px]:justify-between mt-5">
                     <div class="contains mx-3 hover:underline hover:text-slate-700">
                         <a href="#">
                             <img src="/productpage/images/i1.png" class="ml-4" alt="">
@@ -68,8 +68,13 @@
                         </a>
                     </div>
                 </div>
-
+                <div class="cart-btn flex flex-row md:justify-start min-[320px]:justify-around mt-5">
+                    <button class="rounded-full font-sans text-lg font-medium border-solid border-orange-600 border-2 px-5 py-3 hover:scale-105 bg-yellow-400 mr-5">Add to Cart</button>
+                    <button class="rounded-full font-sans text-lg font-medium border-solid border-orange-600 border-2 px-5 py-3 hover:scale-105 bg-yellow-400">Buy Now</button>
+                </div>
             </div>
+
+           
         
     </div>
 </body>
