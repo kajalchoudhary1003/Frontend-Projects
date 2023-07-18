@@ -598,10 +598,6 @@ video {
   margin-right: 1.25rem;
 }
 
-.mt-16 {
-  margin-top: 4rem;
-}
-
 .mt-5 {
   margin-top: 1.25rem;
 }
@@ -762,10 +758,6 @@ video {
     margin: 1.25rem;
   }
 
-  .min-\[320px\]\:mt-5 {
-    margin-top: 1.25rem;
-  }
-
   .min-\[320px\]\:ml-3 {
     margin-left: 0.75rem;
   }
@@ -780,10 +772,6 @@ video {
 
   .min-\[320px\]\:justify-around {
     justify-content: space-around;
-  }
-
-  .min-\[320px\]\:justify-evenly {
-    justify-content: space-evenly;
   }
 }
 
