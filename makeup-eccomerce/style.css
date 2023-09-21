@@ -1,220 +1,211 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-body{
-    font-family: 'Poppins', sans-serif !important;
+body {
+  font-family: "Poppins", sans-serif !important;
 }
-h1{
-    font-weight: bold ;
+h1 {
+  font-weight: bold;
 }
-h5{
-    font-size: 1rem ;
-    font-weight: 400 ;
-    color: black ;
+h5 {
+  font-size: 1rem;
+  font-weight: 400;
+  color: black;
 }
-button{
-    font-size: 0.8rem;
-    font-weight: 700;
-    outline: none;
-    border: none;
-    background-color: black;
-    color: white;
-    padding: 13px 30px;
-    cursor:pointer;
-    text-transform: uppercase;
-    transition: 0.3s ease;
+button {
+  font-size: 0.8rem;
+  font-weight: 700;
+  outline: none;
+  border: none;
+  background-color: black;
+  color: white;
+  padding: 13px 30px;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: 0.3s ease;
 }
-button:hover{
-    background-color: rgb(71, 63, 63);
+button:hover {
+  background-color: rgb(71, 63, 63);
 }
 
-.navbar{
-    font-size: 16px;
-    top: 0;
-    left: 0;
-    background-image: linear-gradient(360deg,rgb(254, 248, 248), white);
-
+.navbar {
+  font-size: 16px;
+  top: 0;
+  left: 0;
+  background-image: linear-gradient(360deg, rgb(254, 248, 248), white);
 }
-.nav-link{
-    padding: 0 20px !important;
-    color: black !important;
-    transition: 0.3s ease !important;
-
+.nav-link {
+  padding: 0 20px !important;
+  color: black !important;
+  transition: 0.3s ease !important;
 }
-.nav-link:hover, .nav-link:active{
-    color: coral !important;
-    font-weight: bolder !important;
-    transform: scale(1.25);
+.nav-link:hover,
+.nav-link:active {
+  color: coral !important;
+  font-weight: bolder !important;
+  transform: scale(1.25);
 }
 
 .navbar-toggler:hover {
-    background-color: coral;
-    border: none;
-    outline: none;
-    transition: 0.3s ease;
+  background-color: coral;
+  border: none;
+  outline: none;
+  transition: 0.3s ease;
 }
 
 @media only screen and (max-width: 991px) {
-    
-    #navbarSupportedContent ul{
-        margin: 1rem;
-        justify-content: flex-end;
-        align-items: flex-end;
-        text-align: right;
-
-    }
-    #navbarSupportedContent ul li{
-        padding: 10px 0;
-    }
-    
+  #navbarSupportedContent ul {
+    margin: 1rem;
+    justify-content: flex-end;
+    align-items: flex-end;
+    text-align: right;
+  }
+  #navbarSupportedContent ul li {
+    padding: 10px 0;
+  }
 }
-.model{
-    aspect-ratio: 3/2;
-    object-fit: contain;
+.model {
+  aspect-ratio: 3/2;
+  object-fit: contain;
 }
 
-#home{
-    background-image: url("images/3.png");
-    width: 100%;
-    height: 100vh;
-    background-size: cover;
-    background-position: top 60px center;
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
+#home {
+  background-image: url("images/3.png");
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: top 60px center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
 }
-#home span{
-    color: coral;
+#home span {
+  color: coral;
 }
-#new .one img{
-    aspect-ratio: 3/2;
-    width: 100%;
-    height: 100%;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
+#new .one img {
+  aspect-ratio: 3/2;
+  width: 100%;
+  height: 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#new .one {
+  position: relative;
+}
+#new .one .details {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  transition: 0.3s ease;
+}
+#new .one:hover .details {
+  cursor: pointer;
+  background-color: rgba(216, 144, 156, 0.5);
+}
+#new .one .details button {
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 500;
+  color: black;
+  background: none;
+  text-transform: uppercase;
+  border-bottom: 1px solid black;
+  padding: 2.5px;
+  transform: translateY(70px);
+  transition: 0.3s ease;
+}
+#new .one .details button:hover {
+  color: white;
+  border-bottom: 1px solid white;
+}
 
-}
-#new .one{
-    position: relative;
-}
-#new .one .details{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    transition: 0.3s ease;
-}
-#new .one:hover .details{
-    cursor: pointer;
-    background-color: rgba(216, 144, 156, 0.5);
-}
-#new .one .details button{
-    display: inline-block;
-    font-size: 14px;
-    font-weight: 500;
-    color: black;
-    background: none;
-    text-transform: uppercase;
-    border-bottom: 1px solid black;
-    padding: 2.5px;
-    transform: translateY(70px);
-    transition: 0.3s ease;
-}
-#new .one .details button:hover{
-    color: white;
-    border-bottom: 1px solid white;
-}
-
-#new .one:nth-child(3) .details{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
+#new .one:nth-child(3) .details {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
 /* products */
 
-.product{
-    cursor: pointer;
-    margin-bottom: 2rem;
+.product {
+  cursor: pointer;
+  margin-bottom: 2rem;
 }
-.product img{
-    transition: 0.3s all;
+.product img {
+  transition: 0.3s all;
 }
-.product:hover img{
-    opacity: 0.7;
+.product:hover img {
+  opacity: 0.7;
 }
-.product .buy-btn{
-    background: coral;
-    transform: translateY(20px);
-    opacity: 0;
-    transition: 0.3s all;
+.product .buy-btn {
+  background: coral;
+  transform: translateY(20px);
+  opacity: 0;
+  transition: 0.3s all;
 }
-.product:hover .buy-btn{
-    transform: translateY(0);
-    opacity: 1;
+.product:hover .buy-btn {
+  transform: translateY(0);
+  opacity: 1;
 }
-hr{
-    width: 40px;
-    height: 5px !important;
-    background-color: rgb(190, 57, 8);
-
+hr {
+  width: 40px;
+  height: 5px !important;
+  background-color: rgb(190, 57, 8);
 }
 
 /* banner */
-#banner{
-    background-image: url("images/2.png");
-    width: 100%;
-    height: 60vh;
-    background-size: cover;
-    background-repeat: no-repeat;
-    /* by this property we have created parallax */
-    background-attachment: fixed;
-    background-position: top 70px center;
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
+#banner {
+  background-image: url("images/2.png");
+  width: 100%;
+  height: 60vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* by this property we have created parallax */
+  background-attachment: fixed;
+  background-position: top 70px center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
 }
-#banner button:hover{
-    background-color: coral;
-
+#banner button:hover {
+  background-color: coral;
 }
 
 /* footer */
-footer{
-    background-color: black;
-    
+footer {
+  background-color: black;
 }
-footer .row{
-    color: rgba(158, 153, 153, 0.838);
+footer .row {
+  color: rgba(158, 153, 153, 0.838);
 }
-footer .row .footer-one h5{
-    color: rgb(195, 189, 189);
-    font-weight: 700;
-    font-size: 1.25rem;
+footer .row .footer-one h5 {
+  color: rgb(195, 189, 189);
+  font-weight: 700;
+  font-size: 1.25rem;
 }
-.footer-one li a{
-    text-decoration: none; 
-    color:rgba(158, 153, 153, 0.838);
-   
+.footer-one li a {
+  text-decoration: none;
+  color: rgba(158, 153, 153, 0.838);
 }
-.footer-one li{
-    padding-bottom: 2px;
+.footer-one li {
+  padding-bottom: 2px;
 }
-.footer-one li a:hover{
-    text-decoration: underline;
+.footer-one li a:hover {
+  text-decoration: underline;
 }
-.footer-one h6{
-    color: rgb(236, 223, 223);
+.footer-one h6 {
+  color: rgb(236, 223, 223);
 }
-.connect-logos a:hover svg{
-    transform: scale(0.7);
+.connect-logos a:hover svg {
+  transform: scale(0.7);
 }
