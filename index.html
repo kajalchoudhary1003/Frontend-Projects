@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: linear-gradient(135deg, #ff7e5f, #feb47b); /* Gradient colors */
+            background-size: cover; /* Ensure the gradient covers the entire screen */
+        }
+        .button-container {
+            display: flex;
+            flex-direction: column; 
+            align-items: center;
+            justify-content: center;
+            gap: 15px; 
+            width: 100%;
+             padding: 20px;
+             max-width: 90%; /*To prevent overflow on small screens */
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border: none;
+            background-color: #9900fffe;
+            color: white;
+            border-radius: 5px;
+            width: 100%; /* Makes the buttons stretch to full width on small screens */
+            max-width: 300px; /* Limits button width on larger screens */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s, transform 0.2s;
+        }
+        button:hover {
+            background-color: #39025e;
+            transform: scale(1.05); /* Slight zoom effect on hover */
+        }
+        @media (min-width: 600px) {
+            .button-container {
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 20px; /* More space between buttons on larger screens */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="button-container">
+     <!-- Buttons for navigation -->
+     <button onclick="navigateTo('age-calculator/index.html')">Age Calculator</button>
+     <button onclick="navigateTo('calculator/index.html')">Calculator</button>
+     <button onclick="navigateTo('characters%20and%20words%20counter/index.html')">Words Counter</button>
+        <button onclick="navigateTo('ecommerce_website/index.html')">Ecommerce Website</button>
+        <button onclick="navigateTo('google-drive-clone/index.html')">Google Drive Clone</button>
+        <button onclick="navigateTo('makeup-eccomerce/index.html')">MakeUp Ecommerce</button>
+        <button onclick="navigateTo('music-player/index.html')">Music Player</button>
+        <button onclick="navigateTo('parallax/index.html')">Parallax</button>
+        <button onclick="navigateTo('productpage/dist/index.html')">Product Page</button>
+        <button onclick="navigateTo('signup-page/dist/index.html')">SignUp Page</button>
+        <button onclick="navigateTo('to-do-list/index.html')">To Do List</button>
+    </div>
+     <script>
+         // Function to navigate to a specific HTML file
+         function navigateTo(url) {
+             window.location.href = url;
+         }
+     </script>
+</body>
+</html>
